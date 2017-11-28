@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 150px;
+    width: 950px;
+    margin: 295px auto;
+    background: red;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.disable-links {
+    pointer-events: none;
+}
+
+.bodyPopUp {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 4000;
+}
+
+#box {
+    height: 150px;
+    width: 450px;
+    color: blue;
+    background: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 90000;
+}
