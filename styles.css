@@ -1,38 +1,64 @@
-* {
-    padding: 0;
-    margin: 0;
+*{
+    padding:0;
+    margin:0;
 }
 
-.container {
-    height: 150px;
-    width: 950px;
-    margin: 295px auto;
-    background: red;
-    color: white;
+.container{
+
+    width:980px;
+    margin:0 auto;
+    border:1px solid #000;
+    border-radius: 8px;
+    height: 250px;
+    margin-top:250px;
+}
+
+.container > #clickHere{
+
+    display: block;
     position: relative;
-    z-index: 2;
+    text-decoration: none;
+    color:white;
+    width:100px;
+    margin:100px auto;
+    background:tomato;
+    text-align: center;
+    padding:6px 15px;
+
 }
 
-.disable-links {
-    pointer-events: none;
-}
-
-.bodyPopUp {
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 4000;
-}
-
-#box {
-    height: 150px;
-    width: 450px;
-    color: blue;
-    background: white;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
+.popup{
+    position:absolute;
+    transition:all ease-in 0.5s;
+    top:0;
+    right:0;
+    margin:0 auto;
+    left:0;
+    width:450px;
+    height:110px;
+    background:#c8c;
+    border:1px solid #000;
     opacity: 0;
-    z-index: 90000;
+    z-index:5;
 }
+
+.popup-move{
+    top:120px;
+    opacity: 1;
+}
+
+.mask{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    z-index:4;
+}
+
+.popup.disabled{
+    top:0;
+}
+
+
